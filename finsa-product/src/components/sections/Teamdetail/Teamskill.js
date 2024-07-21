@@ -1,5 +1,4 @@
 import React from 'react'
-import Progress from 'react-progressbar'
 import VisibilitySensor from "react-visibility-sensor"
 
 function Teamskill(props) {
@@ -28,19 +27,7 @@ function Teamskill(props) {
                                     <span>85%</span>
                                 </div>
                                 <div className="progressbar-wrap">
-                                    <VisibilitySensor>
-                                        {({ isVisible }) => {
-                                            const percentage = isVisible ? 85 : 0
-                                            return (
-                                                <Progress
-                                                    completed={percentage}
-                                                    animation={5000}
-                                                    color='#ff4a17'
-                                                    height={5}
-                                                />
-                                            )
-                                        }}
-                                    </VisibilitySensor>
+
                                 </div>
                             </div>
                             <div className="skill-progress">
@@ -49,61 +36,25 @@ function Teamskill(props) {
                                     <span>95%</span>
                                 </div>
                                 <div className="progressbar-wrap">
-                                    <VisibilitySensor>
-                                        {({ isVisible }) => {
-                                            const percentage = isVisible ? 95 : 0
-                                            return (
-                                                <Progress
-                                                    completed={percentage}
-                                                    animation={5000}
-                                                    color='#ff4a17'
-                                                    height={5}
-                                                />
-                                            )
-                                        }}
-                                    </VisibilitySensor>
+
                                 </div>
-                            </div>
-                            <div className="skill-progress">
-                                <div className="title d-flex justify-content-between">
-                                    <span>Web Design</span>
-                                    <span>72%</span>
+                                <div className="skill-progress">
+                                    <div className="title d-flex justify-content-between">
+                                        <span>Web Design</span>
+                                        <span>72%</span>
+                                    </div>
+                                    <div className="progressbar-wrap">
+
+                                    </div>
                                 </div>
-                                <div className="progressbar-wrap">
-                                    <VisibilitySensor>
-                                        {({ isVisible }) => {
-                                            const percentage = isVisible ? 72 : 0
-                                            return (
-                                                <Progress
-                                                    completed={percentage}
-                                                    animation={5000}
-                                                    color='#ff4a17'
-                                                    height={5}
-                                                />
-                                            )
-                                        }}
-                                    </VisibilitySensor>
-                                </div>
-                            </div>
-                            <div className="skill-progress">
-                                <div className="title d-flex justify-content-between">
-                                    <span>IT Consulting</span>
-                                    <span>79%</span>
-                                </div>
-                                <div className="progressbar-wrap">
-                                    <VisibilitySensor>
-                                        {({ isVisible }) => {
-                                            const percentage = isVisible ? 79 : 0
-                                            return (
-                                                <Progress
-                                                    completed={percentage}
-                                                    animation={5000}
-                                                    color='#ff4a17'
-                                                    height={5}
-                                                />
-                                            )
-                                        }}
-                                    </VisibilitySensor>
+                                <div className="skill-progress">
+                                    <div className="title d-flex justify-content-between">
+                                        <span>IT Consulting</span>
+                                        <span>79%</span>
+                                    </div>
+                                    <div className="progressbar-wrap">
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
